@@ -21,13 +21,18 @@ function ContactItem({title, icon, cont1, cont2}) {
 
 const ContactItemStyled = styled.div`
     padding:1.5rem 2rem;
-    background-color: var(--background-dark-grey);
+    
     display: flex;
     align-items: center;
+    @media screen and (max-width: 978px){
+        grid-template-columns: repeat(1, 1fr);
+        width: 70%;
+        }
     &:not(:last-child){
         margin-bottom: 2.5rem;
     }
     .left-content{
+        
         padding: 1.5rem;
         border: 1px solid var(--border-color);
         font-size: 2rem;
@@ -41,14 +46,21 @@ const ContactItemStyled = styled.div`
     }
 
     .right-content{
+        
         h6{
+            
             color: var(--white-color);
             font-size: 1.2rem;
             padding-bottom: .6rem;
         }
+        @media screen and (max-width: 414px ){
         p{
+            font-size: 10px;
             padding: .1rem 0;
+
+            
         }
+    }
     }
 `;
 

@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GithubIcon from '@material-ui/icons/GitHub';
-import YoutubeIcon from '@material-ui/icons/YouTube';
+
 import Particle from '../Components/Particle';
 import "aos/dist/aos.css";
 

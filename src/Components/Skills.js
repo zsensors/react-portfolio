@@ -20,7 +20,7 @@ function Skills() {
                 <InnerLayout>
                     <div className="skills">
 
-                        <div className='animation' data-aos="fade-right" data-aos-delay="300" >
+                        <div className='animation'>
                         <ProgressBar 
                             title={'REACT'}
                             image={iconreact} 
@@ -28,40 +28,40 @@ function Skills() {
                             
                         />
                         </div>
-                        <div className='animation' data-aos="fade-left" data-aos-delay="1100" >
+                        <div className='animation'>
                         <ProgressBar 
                             title={'CSS'}
                             image={iconcss} 
                         />
                         </div>
-                        <div className='animation' data-aos="fade-left" data-aos-delay="500" >
+                        <div className='animation'>
                         <ProgressBar 
                             title={'HTML'}
                             image={iconhtml} 
                           
                         />
                         </div>
-                        <div className='animation' data-aos="fade-right" data-aos-delay="1300" >
+                        <div className='animation'>
                         <ProgressBar 
                             title={'NODE'}
                             image={nodejs} 
                         />
                         </div>
-                        <div className='animation' data-aos="fade-right" data-aos-delay="700" >
+                        <div className='animation'>
                         <ProgressBar 
                             title={'PHOTOSHOP'}
                             image={photoshop} 
                            
                         />
                         </div>
-                        <div className='animation' data-aos="fade-left" data-aos-delay="1500" >
+                        <div className='animation'>
                         <ProgressBar 
                             title={'TEAMWORK SKILLS'}
                             image={teamwork} 
                           
                         />
                         </div>
-                        <div className='animation' data-aos="fade-left" data-aos-delay="900" >
+                        <div className='animation'>
                         <ProgressBar 
                             title={'AUDIO ENGINEERING'}
                             image={sound} 
@@ -87,6 +87,7 @@ const SkillsStyled = styled.section`
             
         }
 
+       
     
 
     

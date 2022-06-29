@@ -20,7 +20,7 @@ function ContactPage() {
             <Title title={'Contact'} span={'Contact'} />
             <ContactPageStyled >
             <InnerLayout className={'contact-section'}>
-              
+               
                 <div className="right-content">
                     <ContactItem title={'Phone'} icon={phone} cont1={'Not Available'} />
                     <ContactItem title={'Email'} icon={email} cont1={'alonsoramirezdepablos@hotmail.com'}  />
@@ -46,7 +46,7 @@ const ContactPageStyled = styled.section`
         }
         .right-content{
             display: grid;
-            grid-template-columns: repeat(1, 1fr);
+            
             @media screen and (max-width: 502px){
                 width: 70%;
             }

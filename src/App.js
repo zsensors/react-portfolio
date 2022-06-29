@@ -42,10 +42,10 @@ function App() {
 
   return (
     <div className="App">
-        <Sidebar navToggle={navToggle} />
+
 
       
-
+        <Sidebar navToggle={navToggle} />
         <div className="ham-burger-menu">
           <IconButton onClick={() => setNavToggle(!navToggle)}>
               <MenuIcon />
@@ -61,11 +61,12 @@ function App() {
           </div>
 
           <Switching>
-            <Route path="/" exact>
+            <Route path="/home" exact>
+              
               <HomePage />
             </Route>
             <Route path="/about" exact>
-              <AboutPage />
+              <AboutPage/>
             </Route>
             <Route path="/resume" exact>
               <ResumePage />

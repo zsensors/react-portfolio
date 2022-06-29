@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import resume from '../img/resume.jpg';
+import avatar from '../img/avatar.jpg';
 import PrimaryButton from './PrimaryButton';
 
 function ImageSection() {
@@ -9,7 +9,7 @@ function ImageSection() {
     return (
         <ImageSectionStyled>
             <div className="left-content">
-                <img data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1500" src={resume} alt=""/>
+                <img data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1500" src={avatar} alt=""/>
             </div>
             <div className="right-content">
                 <h4>Electronic Engineer <span>Alonso Ramírez</span></h4>
@@ -56,7 +56,7 @@ const ImageSectionStyled = styled.div`
         width: 100%;
         img{
             width: 95%;
-            height: 60%;
+            height: 80%;
             object-fit: cover;
             border-radius: 1rem;
         }

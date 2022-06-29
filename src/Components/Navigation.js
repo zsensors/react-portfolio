@@ -3,18 +3,25 @@ import styled from 'styled-components';
 import {NavLink} from 'react-router-dom';
 import avatar from '../img/avatar.jpg';
 import GithubIcon from '@material-ui/icons/GitHub';
-
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
+
+
 function Navigation() {
+    
+
+
     return (
+
+        
         <NavigationStyled>
             <div className="avatar">
                 <img src={avatar} alt=""/>
             </div>
             <ul className="nav-items">
                 <li className="nav-item">
-                    <NavLink to="/" activeClassName="active-class" exact>Home</NavLink>
+               
+                    <NavLink to="/home" activeClassName="active-class" exact>Home</NavLink>
                 </li>
                 <li className="nav-item">
                     <NavLink to="/about" activeClassName="active-class" exact>About</NavLink>

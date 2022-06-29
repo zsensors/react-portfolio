@@ -24,14 +24,12 @@ const ProgressBarStyled = styled.div`
         
     }
     .progress-bar{
-       
+        
         display: flex;
         padding-bottom: 5rem;
         align-items: center;
         border-radius: 1rem;
-        p{
-            padding-right: 1.1rem;
-        }
+        
         .progress{
             position: relative;
             width: 100%;
@@ -41,6 +39,15 @@ const ProgressBarStyled = styled.div`
 
     
     
+    }
+
+
+    @media screen and (max-width: 900px){
+        .progress-bar img{
+           
+        }    
+
+            
     }
 
     .progress-bar:hover{

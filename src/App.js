@@ -15,6 +15,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 
+
 function App() {
   const [theme, setTheme] = useState('dark-theme');
   const [checked, setChecked] = useState(false);
@@ -60,6 +61,8 @@ function App() {
             <div className="line-4"></div>
           </div>
 
+          
+
           <Switching>
             <Route path="/home" exact>
               
@@ -79,7 +82,7 @@ function App() {
               <ContactPage />
             </Route>
           </Switching>
-
+          <HomePage />
         </MainContentStyled>
     </div>
   );

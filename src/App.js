@@ -64,8 +64,8 @@ function App() {
           
 
           <Switching>
-            <Route path="/home" exact>
-              
+         
+            <Route path="/react-portfolio" exact>
               <HomePage />
             </Route>
             <Route path="/about" exact>
@@ -82,7 +82,7 @@ function App() {
               <ContactPage />
             </Route>
           </Switching>
-          <HomePage />
+          
         </MainContentStyled>
     </div>
   );

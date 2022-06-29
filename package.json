@@ -1,4 +1,5 @@
 {
+  "homepage": "http://zsensors.github.io/react-portfolio",
   "name": "final-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -23,6 +24,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -46,6 +49,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "nodemon": "^2.0.18"
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",

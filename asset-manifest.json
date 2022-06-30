@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/react-portfolio/static/js/main.b7da0c25.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.b7da0c25.chunk.js.map",
+    "main.js": "/react-portfolio/static/js/main.f30862d8.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.f30862d8.chunk.js.map",
     "runtime-main.js": "/react-portfolio/static/js/runtime-main.65e7fa2f.js",
     "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.65e7fa2f.js.map",
     "static/css/2.7fc9bc2b.chunk.css": "/react-portfolio/static/css/2.7fc9bc2b.chunk.css",
@@ -23,7 +23,7 @@
     "static/media/medisochow.933b58bc.jpg": "/react-portfolio/static/media/medisochow.933b58bc.jpg",
     "static/media/nodejs.e89d5566.svg": "/react-portfolio/static/media/nodejs.e89d5566.svg",
     "static/media/photoshop.00d3c6a4.svg": "/react-portfolio/static/media/photoshop.00d3c6a4.svg",
-    "static/media/portfolio.9df94564.jpg": "/react-portfolio/static/media/portfolio.9df94564.jpg",
+    "static/media/portfolio.9e840814.jpg": "/react-portfolio/static/media/portfolio.9e840814.jpg",
     "static/media/sedisa.6980a8f2.jpg": "/react-portfolio/static/media/sedisa.6980a8f2.jpg",
     "static/media/sedisa.7a4692d5.png": "/react-portfolio/static/media/sedisa.7a4692d5.png",
     "static/media/silla.54c22c57.png": "/react-portfolio/static/media/silla.54c22c57.png",
@@ -34,6 +34,6 @@
     "static/js/runtime-main.65e7fa2f.js",
     "static/css/2.7fc9bc2b.chunk.css",
     "static/js/2.262ae70f.chunk.js",
-    "static/js/main.b7da0c25.chunk.js"
+    "static/js/main.f30862d8.chunk.js"
   ]
 }

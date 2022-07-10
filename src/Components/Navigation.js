@@ -5,38 +5,45 @@ import avatar from '../img/avatar.jpg';
 import GithubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
-
-
+import { useStateContext } from '../contexts/ContextProvider';
 
 function Navigation() {
     
-    
+    const { activeMenu, setActiveMenu, screenSize } = useStateContext();
+    //makes sidebar close when you click an element
+    const handleCloseSideBar = () => {
+        if(activeMenu && screenSize <= 900){
+            setActiveMenu(false) 
+        }
+    }
 
     return (
-
+        
         
         <NavigationStyled>
+           
             <div className="avatar">
                 <img src={avatar} alt=""/>
             </div>
-            <ul className="nav-items">
-                <li className="nav-item">
+
+            <ul className="nav-items"   >
                 
-                    <NavLink to="/react-portfolio" activeClassName="active-class" exact>Home</NavLink>
+                <li className="nav-item"  >
+                    <NavLink type='button' onClick={() => setActiveMenu ((prevActiveMenu) => !prevActiveMenu)} to="/react-portfolio"  activeClassName="active-class" exact  >Home</NavLink>
+                </li>
+                <li className="nav-item">
+                    <NavLink type='button' onClick={() => setActiveMenu ((prevActiveMenu) => !prevActiveMenu)} to="/about" activeClassName="active-class" exact>About</NavLink>
+                </li>
+                <li className="nav-item">
+                    <NavLink type='button' onClick={() => setActiveMenu ((prevActiveMenu) => !prevActiveMenu)} to="/resume" activeClassName="active-class" exact>Resume</NavLink>
+                </li>
+                <li className="nav-item">
+                    <NavLink type='button' onClick={() => setActiveMenu ((prevActiveMenu) => !prevActiveMenu)} to="/portfolios" activeClassName="active-class" exact>Portfolios</NavLink>
+                </li>
+                <li className="nav-item">
+                    <NavLink type='button' onClick={() => setActiveMenu ((prevActiveMenu) => !prevActiveMenu)} to="/contact" activeClassName="active-class" exact>Contact</NavLink>
+                </li>
                 
-                </li>
-                <li className="nav-item">
-                    <NavLink to="/about" activeClassName="active-class" exact>About</NavLink>
-                </li>
-                <li className="nav-item">
-                    <NavLink to="/resume" activeClassName="active-class" exact>Resume</NavLink>
-                </li>
-                <li className="nav-item">
-                    <NavLink to="/portfolios" activeClassName="active-class" exact>Portfolios</NavLink>
-                </li>
-                <li className="nav-item">
-                    <NavLink to="/contact" activeClassName="active-class" exact>Contact</NavLink>
-                </li>
             </ul>
             <footer className="footer">
             <div className="icons">

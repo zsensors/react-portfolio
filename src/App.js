@@ -15,11 +15,15 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 
+import { useStateContext } from './contexts/ContextProvider';
+
 
 function App() {
+  
   const [theme, setTheme] = useState('dark-theme');
   const [checked, setChecked] = useState(false);
   const [navToggle, setNavToggle] = useState(false);
+  
   useEffect(() => {
     AOS.init();
     AOS.refresh();
@@ -41,19 +45,37 @@ function App() {
     }
   }
 
+
+   const { activeMenu, setActiveMenu, screenSize } = useStateContext();
+
+    const handleCloseSideBar = () => {
+        if(activeMenu && screenSize <= 900){
+            setActiveMenu(false) 
+        }
+    }
   return (
     <div className="App">
 
 
-      
+        {activeMenu ? (
+
         <Sidebar navToggle={navToggle} />
-        <div className="ham-burger-menu">
+        
+        
+        ) : (
+            
+          <Sidebar navToggle={!navToggle} />
+        )
+        }
+        <MainContentStyled>
+
+        <div className="ham-burger-menu" >
+          
           <IconButton onClick={() => setNavToggle(!navToggle)}>
               <MenuIcon />
           </IconButton>
         </div>
-
-        <MainContentStyled>
+        
           <div className="lines">
             <div className="line-1"></div>
             <div className="line-2"></div>
@@ -65,8 +87,8 @@ function App() {
 
           <Switching>
          
-            <Route path="/react-portfolio" exact>
-              <HomePage />
+            <Route  path="/react-portfolio" exact >
+              <HomePage  />
             </Route>
             <Route path="/about" exact>
               <AboutPage/>
@@ -109,6 +131,13 @@ const MainContentStyled = styled.main`
       background-color: var(--border-color);
     }
   }
+
+    .ham-burger-menu{
+      position: fixed;
+    }
+ 
 `;
+
+
 
 export default App;
